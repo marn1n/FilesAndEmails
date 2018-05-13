@@ -1,0 +1,14 @@
+1  entity -> class
+2  dao
+3  service + service impl
+4  create page
+5  config -> webconfig, webinit  ,dataconfig
+6  controller
+
+email
+
+1  service
+2  mailservice imple
+3  webconfig -> add javamailsender bean
+4  in mailserviceimple add mimemsg
+5  in controller add mailService sendEmail
