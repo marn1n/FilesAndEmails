@@ -15,7 +15,7 @@
 
 <form action="send" method="post" enctype="multipart/form-data">
     <input type="email" name="email" placeholder="email">
-    <input type="file" name="ava" placeholder="ava">
+    <%--<input type="file" name="ava" placeholder="ava">--%>
     <input type="submit">
 </form>
 </body>

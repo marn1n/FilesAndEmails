@@ -25,13 +25,17 @@ public class MainController {
     @Autowired
     private MailService mailService;
     @PostMapping("/send")
-    public String home(Client client,
-                       @RequestParam ("ava") MultipartFile file) throws IOException {
-        String path = System.getProperty("user.home") + File.separator + "files" + File.separator;
-        file.transferTo(new File(path + file.getOriginalFilename()));
+    public String home(Client client
+                       /*, @RequestParam ("ava") MultipartFile file*/) throws IOException {
+//        String path = System.getProperty("user.home") + File.separator + "files" + File.separator;
+//        file.transferTo(new File(path + file.getOriginalFilename()));
 
         clientService.save(client);
-        mailService.sendEmail(client);
+//        mailService.sendEmail(client);
         return "redirect:/";
+    }
+    @GetMapping("/rest")
+    public String rest(){
+        return "rest";
     }
 }

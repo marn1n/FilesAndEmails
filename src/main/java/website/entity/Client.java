@@ -18,5 +18,5 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String email;
-    private String file;
+//    private String file;
 }

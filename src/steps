@@ -11,4 +11,10 @@ email
 2  mailservice imple
 3  webconfig -> add javamailsender bean
 4  in mailserviceimple add mimemsg
-5  in controller add mailService sendEmail
+5  in controller add mailService.sendEmail()
+
+
+1 getMapping url "/..."
+2 create page "/..."
+3 write <script>....</script> etc
+4 create MyRestController + getmapping url "/sth"
